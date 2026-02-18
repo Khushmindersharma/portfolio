@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AWS DevOps Engineer Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <h1 class="logo">Khushminder Sharma</h1>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#architecture">Architecture</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="controls">
+            <button id="themeToggle">🌙</button>
+            <div class="hamburger" onclick="toggleMenu()">
+                ☰
+            </div>
+        </div>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>AWS & DevOps Engineer</h2>
+    <p>Designing Scalable Cloud Infrastructure & Automated CI/CD Pipelines</p>
+    <div class="hero-buttons">
+        <a href="#projects" class="btn">View Projects</a>
+        <a href="resume.pdf" download class="btn outline">Download Resume</a>
+    </div>
+</section>
+
+<section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+        Cloud-focused DevOps Engineer with hands-on experience in AWS infrastructure,
+        automation, containerization, and CI/CD pipelines. Passionate about scalable,
+        secure, and highly available cloud systems.
+    </p>
+</section>
+
+<section id="skills" class="section">
+    <h2>Technical Skills</h2>
+
+    <div class="skill">
+        <p>AWS</p>
+        <div class="progress"><div class="progress-bar" data-width="90%"></div></div>
+    </div>
+
+    <div class="skill">
+        <p>Docker</p>
+        <div class="progress"><div class="progress-bar" data-width="85%"></div></div>
+    </div>
+
+    <div class="skill">
+        <p>Kubernetes</p>
+        <div class="progress"><div class="progress-bar" data-width="75%"></div></div>
+    </div>
+    
+    <div class="skill">
+        <p>Terraform</p>
+        <div class="progress"><div class="progress-bar" data-width="80%"></div></div>
+    </div>
+
+    <div class="skill">
+        <p>CI/CD</p>
+        <div class="progress"><div class="progress-bar" data-width="88%"></div></div>
+    </div>
+
+    <div class="skill">
+        <p>Marven / Jenkins</p>
+        <div class="progress"><div class="progress-bar" data-width="80%"></div></div>
+    </div>
+
+    <div class="skill">
+        <p>Ansible</p>
+        <div class="progress"><div class="progress-bar" data-width="70%"></div></div>
+    </div>
+
+    <div class="skill">
+        <p>Prometheus / Grafana</p>
+        <div class="progress"><div class="progress-bar" data-width="80%"></div></div>
+    </div>
+
+    <div class="skill">
+        <p>Bash Shell / Python</p>
+        <div class="progress"><div class="progress-bar" data-width="60%"></div></div>
+    </div>
+</section>
+
+<section id="projects" class="section">
+    <h2>Projects</h2>
+
+    <div class="project-card" onclick="openModal('modal1')">
+        <h3>AWS Static Website</h3>
+        <p>S3 + CloudFront secure hosting</p>
+    </div>
+
+    <div class="project-card" onclick="openModal('modal2')">
+        <h3>CI/CD Pipeline</h3>
+        <p>GitHub Actions → EC2 deployment</p>
+    </div>
+
+    <div class="project-card" onclick="openModal('modal3')">
+        <h3>Terraform Infrastructure</h3>
+        <p>Automated AWS provisioning</p>
+    </div>
+
+        <div class="project-card" onclick="openModal('modal3')">
+        <h3>Two Tier Flask Application Deployment</h3>
+        <p>Two Tier application frontend deployed Flask and backend Mysql Database in Kubernetes And EKS/EC2 in aws</p>
+    </div>
+</section>
+
+<section id="architecture" class="section">
+    <h2>AWS & DevOps Architecture Designs</h2>
+    <div class="architecture-container">
+
+        <img src="images/architecture1.png" alt="AWS Architecture 1">
+        <img src="images/architecture2.png" alt="AWS Architecture 2">
+        <img src="images/architecture3.png" alt="AWS Architecture 3">
+        <img src="images/architecture4.png" alt="AWS Architecture 4">
+        <img src="images/architecture5.png" alt="AWS Architecture 5">
+   
+    </div>
+</section>
+
+<section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Email: sharma_khushminder@yahoo.com</p>
+    <p>LinkedIn: linkedin.com/in/sharma_khushminder@yahoo.com</p>
+    <p>GitHub: github.com/Khushmindersharma</p>
+</section>
+
+<footer>
+    <p>© 2026 Your Khushminder Sharma | AWS DevOps Engineer</p>
+</footer>
+
+<!-- Modals -->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <span onclick="closeModal('modal1')" class="close">&times;</span>
+        <h3>AWS Static Website</h3>
+        <p>Implemented secure S3 static hosting with CloudFront CDN and IAM policies.</p>
+    </div>
+</div>
+
+<div id="modal2" class="modal">
+    <div class="modal-content">
+        <span onclick="closeModal('modal2')" class="close">&times;</span>
+        <h3>CI/CD Pipeline</h3>
+        <p>Automated deployment to EC2 using GitHub Actions with secure SSH keys.</p>
+    </div>
+</div>
+
+<div id="modal3" class="modal">
+    <div class="modal-content">
+        <span onclick="closeModal('modal3')" class="close">&times;</span>
+        <h3>Terraform Infrastructure</h3>
+        <p>Provisioned VPC, EC2, Security Groups, and S3 using Infrastructure as Code.</p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
